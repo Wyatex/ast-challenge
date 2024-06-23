@@ -1,5 +1,355 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`look dest 1`] = `
+Node {
+  "comments": Array [],
+  "end": 464,
+  "errors": Array [],
+  "loc": SourceLocation {
+    "end": Position {
+      "column": 4,
+      "index": 464,
+      "line": 14,
+    },
+    "filename": undefined,
+    "identifierName": undefined,
+    "start": Position {
+      "column": 0,
+      "index": 0,
+      "line": 1,
+    },
+  },
+  "program": Node {
+    "body": Array [
+      Node {
+        "declaration": Node {
+          "body": Node {
+            "body": Array [
+              Node {
+                "computed": false,
+                "key": Node {
+                  "name": "request",
+                  "type": "Identifier",
+                },
+                "optional": true,
+                "type": "TSPropertySignature",
+                "typeAnnotation": Node {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": Node {
+                    "type": "TSTypeReference",
+                    "typeName": Node {
+                      "name": "QueryPoolsRequest",
+                      "type": "Identifier",
+                    },
+                  },
+                },
+              },
+            ],
+            "type": "TSInterfaceBody",
+          },
+          "extends": Array [
+            Node {
+              "expression": Node {
+                "name": "ReactQueryParams",
+                "type": "Identifier",
+              },
+              "type": "TSExpressionWithTypeArguments",
+              "typeParameters": Node {
+                "params": Array [
+                  Node {
+                    "type": "TSTypeReference",
+                    "typeName": Node {
+                      "name": "QueryPoolsResponse",
+                      "type": "Identifier",
+                    },
+                  },
+                  Node {
+                    "type": "TSTypeReference",
+                    "typeName": Node {
+                      "name": "TData",
+                      "type": "Identifier",
+                    },
+                  },
+                ],
+                "type": "TSTypeParameterInstantiation",
+              },
+            },
+          ],
+          "id": Node {
+            "name": "UsePoolsQuery",
+            "type": "Identifier",
+          },
+          "type": "TSInterfaceDeclaration",
+          "typeParameters": Node {
+            "params": Array [
+              Node {
+                "constraint": undefined,
+                "default": undefined,
+                "name": "TData",
+                "type": "TSTypeParameter",
+              },
+            ],
+            "type": "TSTypeParameterDeclaration",
+          },
+        },
+        "exportKind": "type",
+        "source": null,
+        "specifiers": Array [],
+        "type": "ExportNamedDeclaration",
+      },
+      Node {
+        "declarations": Array [
+          Node {
+            "id": Node {
+              "name": "usePools",
+              "type": "Identifier",
+            },
+            "init": Node {
+              "async": false,
+              "body": Node {
+                "body": Array [
+                  Node {
+                    "argument": Node {
+                      "arguments": Array [
+                        Node {
+                          "elements": Array [
+                            Node {
+                              "extra": Object {
+                                "raw": "\\"poolsQuery\\"",
+                                "rawValue": "poolsQuery",
+                              },
+                              "type": "StringLiteral",
+                              "value": "poolsQuery",
+                            },
+                            Node {
+                              "name": "request",
+                              "type": "Identifier",
+                            },
+                          ],
+                          "type": "ArrayExpression",
+                        },
+                        Node {
+                          "async": false,
+                          "body": Node {
+                            "body": Array [
+                              Node {
+                                "alternate": null,
+                                "consequent": Node {
+                                  "argument": Node {
+                                    "arguments": Array [
+                                      Node {
+                                        "extra": Object {
+                                          "raw": "\\"Query Service not initialized\\"",
+                                          "rawValue": "Query Service not initialized",
+                                        },
+                                        "type": "StringLiteral",
+                                        "value": "Query Service not initialized",
+                                      },
+                                    ],
+                                    "callee": Node {
+                                      "name": "Error",
+                                      "type": "Identifier",
+                                    },
+                                    "type": "NewExpression",
+                                  },
+                                  "type": "ThrowStatement",
+                                },
+                                "test": Node {
+                                  "argument": Node {
+                                    "name": "queryService",
+                                    "type": "Identifier",
+                                  },
+                                  "operator": "!",
+                                  "prefix": true,
+                                  "type": "UnaryExpression",
+                                },
+                                "type": "IfStatement",
+                              },
+                              Node {
+                                "argument": Node {
+                                  "arguments": Array [
+                                    Node {
+                                      "name": "request",
+                                      "type": "Identifier",
+                                    },
+                                  ],
+                                  "callee": Node {
+                                    "computed": false,
+                                    "object": Node {
+                                      "name": "queryService",
+                                      "type": "Identifier",
+                                    },
+                                    "property": Node {
+                                      "name": "pools",
+                                      "type": "Identifier",
+                                    },
+                                    "type": "MemberExpression",
+                                  },
+                                  "type": "CallExpression",
+                                },
+                                "type": "ReturnStatement",
+                              },
+                            ],
+                            "directives": Array [],
+                            "type": "BlockStatement",
+                          },
+                          "generator": false,
+                          "id": null,
+                          "params": Array [],
+                          "type": "ArrowFunctionExpression",
+                        },
+                        Node {
+                          "name": "options",
+                          "type": "Identifier",
+                        },
+                      ],
+                      "callee": Node {
+                        "name": "useQuery",
+                        "type": "Identifier",
+                      },
+                      "type": "CallExpression",
+                      "typeParameters": Node {
+                        "params": Array [
+                          Node {
+                            "type": "TSTypeReference",
+                            "typeName": Node {
+                              "name": "QueryPoolsResponse",
+                              "type": "Identifier",
+                            },
+                          },
+                          Node {
+                            "type": "TSTypeReference",
+                            "typeName": Node {
+                              "name": "Error",
+                              "type": "Identifier",
+                            },
+                          },
+                          Node {
+                            "type": "TSTypeReference",
+                            "typeName": Node {
+                              "name": "TData",
+                              "type": "Identifier",
+                            },
+                          },
+                        ],
+                        "type": "TSTypeParameterInstantiation",
+                      },
+                    },
+                    "type": "ReturnStatement",
+                  },
+                ],
+                "directives": Array [],
+                "type": "BlockStatement",
+              },
+              "generator": false,
+              "id": null,
+              "params": Array [
+                Node {
+                  "properties": Array [
+                    Node {
+                      "computed": false,
+                      "extra": Object {
+                        "shorthand": true,
+                      },
+                      "key": Node {
+                        "name": "request",
+                        "type": "Identifier",
+                      },
+                      "method": false,
+                      "shorthand": true,
+                      "type": "ObjectProperty",
+                      "value": Node {
+                        "extra": undefined,
+                        "name": "request",
+                        "range": undefined,
+                        "type": "Identifier",
+                      },
+                    },
+                    Node {
+                      "computed": false,
+                      "extra": Object {
+                        "shorthand": true,
+                      },
+                      "key": Node {
+                        "name": "options",
+                        "type": "Identifier",
+                      },
+                      "method": false,
+                      "shorthand": true,
+                      "type": "ObjectProperty",
+                      "value": Node {
+                        "extra": undefined,
+                        "name": "options",
+                        "range": undefined,
+                        "type": "Identifier",
+                      },
+                    },
+                  ],
+                  "type": "ObjectPattern",
+                  "typeAnnotation": Node {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": Node {
+                      "type": "TSTypeReference",
+                      "typeName": Node {
+                        "name": "UsePoolsQuery",
+                        "type": "Identifier",
+                      },
+                      "typeParameters": Node {
+                        "params": Array [
+                          Node {
+                            "type": "TSTypeReference",
+                            "typeName": Node {
+                              "name": "TData",
+                              "type": "Identifier",
+                            },
+                          },
+                        ],
+                        "type": "TSTypeParameterInstantiation",
+                      },
+                    },
+                  },
+                },
+              ],
+              "type": "ArrowFunctionExpression",
+              "typeParameters": Node {
+                "extra": Object {
+                  "trailingComma": 172,
+                },
+                "params": Array [
+                  Node {
+                    "constraint": undefined,
+                    "default": Node {
+                      "type": "TSTypeReference",
+                      "typeName": Node {
+                        "name": "QueryPoolsResponse",
+                        "type": "Identifier",
+                      },
+                    },
+                    "name": "TData",
+                    "type": "TSTypeParameter",
+                  },
+                ],
+                "type": "TSTypeParameterDeclaration",
+              },
+            },
+            "type": "VariableDeclarator",
+          },
+        ],
+        "kind": "const",
+        "type": "VariableDeclaration",
+      },
+    ],
+    "directives": Array [],
+    "interpreter": null,
+    "sourceType": "module",
+    "start": 0,
+    "type": "Program",
+  },
+  "start": 0,
+  "type": "File",
+}
+`;
+
 exports[`works 1`] = `
 "export interface MyOtherInterface {
   a: string;
