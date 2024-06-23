@@ -1,9 +1,8 @@
 import * as t from "@babel/types";
 
 export function genFunction(
-  requestType: string,
   responseType: string,
-  returnType: string,
+  paramTypeName: string,
   functionName: string,
   keyName = "poolsQuery",
   queryServiceMethodName = "pools"
@@ -26,7 +25,7 @@ export function genFunction(
 
   requestParam.typeAnnotation = t.tsTypeAnnotation(
     t.tsTypeReference(
-      t.identifier(returnType),
+      t.identifier(paramTypeName),
       t.tsTypeParameterInstantiation([t.tsTypeReference(t.identifier("TData"))])
     )
   );
